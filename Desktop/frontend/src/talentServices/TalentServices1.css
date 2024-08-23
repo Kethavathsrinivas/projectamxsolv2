@@ -1,0 +1,325 @@
+/* TalentServices1.css */
+
+.subtalent-container {
+    width: 100%;
+    margin: 0 auto;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Section Styles */
+.subtalent-section {
+    padding: 10px; 
+    margin: 20px -10px;
+    position: relative;
+}
+
+.subtalent-background {
+    position: relative;
+    height: 100px; /* Reduced height */
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+}
+
+.subtalent-background1 {
+    background-image: url('../assets/talent-solutions/talent2.jpg');
+}
+
+.subtalent-background2 {
+    background-image: url('../assets/talent-solutions/talent2.jpg');
+}
+
+.subtalent-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    margin-left: 60px;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    color: #fff;
+    border-radius: 8px;
+}
+
+.subtalent-title {
+    font-size: 2.1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.subtalent-small-image {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+/* Content Row Styles */
+.subtalent-content-row {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin: 0px 50px;
+}
+
+.subtalent-image {
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.subtalent-image1 {
+    background-image: url('../assets/talent-solutions/2.jpg');
+}
+
+.subtalent-image2 {
+    background-image: url('../assets/talent-solutions/5.jpg');
+}
+
+.subtalent-content {
+    flex: 1.5;
+    color: #333;
+}
+
+.subtalent-content h3 {
+    font-size: 2.4rem;
+    margin-bottom: 20px;
+}
+
+.subtalent-content p {
+    font-size: 1.4rem;
+    line-height: 1.6;
+}
+
+.subtalent-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 29px;
+    position: relative;
+  }
+  
+  .talentsolution-button {
+    padding: 10px 20px;
+   background:transparent ;
+    color: black;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    width: 31%; /* Ensures 3 buttons per row */
+    position: relative;
+    text-align: center;
+  }
+  
+  .talentsolution-button:hover {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: white;
+    transform: scale(1.05);
+  }
+  
+  .talentsolution-button:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  /* Tooltip Styling */
+  .tooltip {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    bottom: -25px; /* Adjust this to control the tooltip's position */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    white-space: nowrap;
+    transition: visibility 0.3s, opacity 0.3s;
+  }
+  
+/* Collapsible Section Styles */
+.subtalent-titles {
+    padding: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.subtalent-collapsible {
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.subtalent-title-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2rem; /* Increased font size */
+    font-weight: bold;
+    color: #333;
+}
+
+.infinity{
+    font-size: 2.2rem;
+    color: red;
+}
+
+.subtalent-icon {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.subtalent-description {
+    padding: 15px 0;
+    font-size: 1rem;
+    color: #555;
+}
+
+.subtalent-description p {
+    margin-bottom: 10px;
+}
+
+.subtalent-description a {
+    color: #0066cc;
+    text-decoration: underline;
+}
+
+.subtalent-connect {
+    margin-top: 15px;
+}
+
+.subtalent-connect p {
+    font-weight: bold;
+}
+
+.subtalent-icons {
+    display: flex;
+    gap: 10px;
+    font-size: 1.2rem;
+}
+
+
+.subtalent-icons a{
+    text-decoration: none;
+    color: black;
+}
+
+.subtalent-divider {
+    border: 1px solid #ddd;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    /* Adjust the padding and margins for smaller screens */
+    .subtalent-section {
+        padding: 10px; /* Adjust padding if needed */
+        margin: 10px 0; /* Reduce margins to fit smaller screens */
+    }
+
+    .subtalent-background {
+        height: 80px; /* Adjust background height for smaller screens */
+    }
+
+    .subtalent-overlay {
+        margin-left: 0; /* Remove left margin for smaller screens */
+        margin-right: 0; /* Remove right margin for smaller screens */
+        padding: 10px; /* Adjust padding for smaller screens */
+        font-size: 1.2rem; /* Adjust font size for readability */
+    }
+
+    .subtalent-title {
+        font-size: 1.8rem; /* Adjust font size for smaller screens */
+    }
+
+    .subtalent-small-image {
+        width: 50px; /* Smaller image size for mobile */
+        height: 50px; /* Smaller image size for mobile */
+        margin-right: 10px; /* Adjust margin */
+        margin-bottom: 5px; /* Adjust margin */
+    }
+
+    .subtalent-content-row {
+        flex-direction: column; /* Stack content vertically */
+        margin: 0; /* Remove side margins */
+    }
+
+    .subtalent-image {
+        height: 200px; /* Adjust image height for smaller screens */
+        margin-bottom: 15px; /* Adjust margin */
+    }
+
+    .subtalent-content {
+        color: #333;
+        font-size: 1.2rem; /* Adjust font size */
+    }
+
+    .subtalent-content h3 {
+        font-size: 1.8rem; /* Adjust font size */
+    }
+
+    .subtalent-content p {
+        font-size: 1.2rem; /* Adjust font size */
+    }
+
+    .subtalent-buttons {
+        flex-direction: column; /* Stack buttons vertically */
+        gap: 15px; /* Reduce gap between buttons */
+    }
+
+    .talentsolution-button {
+        width: 100%; /* Full width buttons on smaller screens */
+        font-size: 1rem; /* Adjust font size */
+    }
+
+    .tooltip {
+        bottom: -15px; /* Adjust position for tooltip on mobile */
+        font-size: 0.8rem; /* Adjust font size */
+    }
+
+    .subtalent-titles {
+        margin-left: 0; /* Remove left margin */
+        margin-right: 0; /* Remove right margin */
+        padding: 10px; /* Adjust padding */
+    }
+
+    .mobile-talent{
+        width: 100%;
+        height: 100%;
+        font-size: 12px;
+    }
+
+    .mobile-talent2{
+        width: 100%;
+        height: 70%;
+        font-size: 15px;
+    }
+
+
+    .subtalent-title-row {
+        font-size: 1.6rem; /* Adjust font size */
+    }
+
+    .subtalent-icon {
+        font-size: 1.5rem; /* Increase icon size for better visibility */
+    }
+
+    .subtalent-description {
+        font-size: 1.2rem; /* Adjust font size */
+    }
+
+    .subtalent-icons {
+        font-size: 1rem; /* Adjust icon size */
+    }
+}

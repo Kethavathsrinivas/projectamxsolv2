@@ -1,0 +1,231 @@
+/* General container styling for the TalentMain component */
+.talentmain-container {
+    display: flex;
+    background-image: url('../assets/talent-solutions/main.jpg'); /* Replace with the correct image path */
+    background-size: cover;
+    padding: 40px;
+}
+
+.talentmain-left {
+    width: 35%;
+    color: black;
+    padding: 20px;
+}
+
+.talentmain-content-overlay {
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.talentmain-title {
+    font-size: 1em;
+    margin-bottom: 30px;
+}
+
+.talentmain-description {
+    margin-bottom: 20px;
+    font-size: 1em;
+}
+
+.talentmain-buttons button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+.talentmain-buttons button:hover {
+    opacity: 0.9;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+}
+
+.talentmain-subtext {
+    margin: 20px 0;
+    font-size: 1em;
+    font-style: italic;
+}
+
+.talentmain-request-button {
+    padding: 10px;
+    background: linear-gradient(to right, #ff416c, #ff4b2b);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+}
+
+.talentmain-right {
+    width: 50%;
+    color: black;
+    padding: 20px;
+    margin-left: 170px;
+    margin-top: 50px;
+    text-align: right;
+}
+
+.talentmain-right-title {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.talentmain-right-subtitle {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.talentmain-right-description {
+    font-size: 1em;
+    margin-bottom: 30px;
+}
+
+.talentmain-contact {
+    font-size: 1em;
+    font-style: italic;
+}
+
+.contact-bold {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.talentmain-services {
+    font-size: 1em;
+}
+
+.talentmain-connect {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+}
+
+.talentmain-connect a {
+    text-decoration: none;
+    color: black;
+}
+
+.talentmain-footer {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 40px;
+}
+
+.talentmain-underimage{
+    margin: 20px 50px;
+}
+
+.talentmain-underimage h1{
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+.talentmain-underimage h7{
+    font-size: 30px;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+.talentmain-underimage p{
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 10px;
+}
+
+/* Mobile view adjustments */
+@media (max-width: 768px) {
+    .talentmain-container {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .talentmain-left, 
+    .talentmain-right {
+        width: 100%;
+        padding: 10px;
+        margin: 0;
+        text-align: left;
+    }
+
+    .talentmain-right {
+        margin-top: 20px;
+    }
+
+    .talentmain-right-title {
+        font-size: 2em;
+        text-align: center;
+    }
+
+    .talentmain-right-subtitle {
+        font-size: 1.3em;
+        text-align: center;
+    }
+
+    .talentmain-right-description {
+        font-size: 0.9em;
+        text-align: center;
+    }
+
+    .talentmain-buttons button {
+        font-size: 1em;
+        padding: 8px;
+    }
+
+    .talentmain-subtext, 
+    .talentmain-contact, 
+    .talentmain-services {
+        font-size: 0.9em;
+    }
+
+    .talentmain-request-button {
+        font-size: 1em;
+        padding: 8px;
+    }
+
+    .talentmain-footer {
+        font-size: 1em;
+        margin-top: 20px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .talentmain-container {
+        padding: 15px;
+    }
+
+    .talentmain-right-title {
+        font-size: 1.8em;
+    }
+
+    .talentmain-right-subtitle {
+        font-size: 1.2em;
+    }
+
+    .talentmain-right-description {
+        font-size: 0.8em;
+    }
+
+    .talentmain-buttons button {
+        font-size: 0.9em;
+        padding: 7px;
+    }
+
+    .talentmain-subtext, 
+    .talentmain-contact, 
+    .talentmain-services {
+        font-size: 0.8em;
+    }
+
+    .talentmain-request-button {
+        font-size: 0.9em;
+        padding: 7px;
+    }
+
+    .talentmain-footer {
+        font-size: 0.9em;
+        margin-top: 20px;
+    }
+}

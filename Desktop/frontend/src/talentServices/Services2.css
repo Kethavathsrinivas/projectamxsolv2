@@ -1,0 +1,262 @@
+.talentservices2-container {
+    font-family: Arial, sans-serif;
+  }
+  
+  .talentservices2-header {
+    text-align: center;
+    background-image: url('../assets/talent-solutions/job2.jpg');
+    padding: 50px;
+    color: white;
+  }
+
+  .talentservices2-header h1{
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .talentservices2-header h2{
+    font-size: 20px;
+  }
+  
+  .highlight-red {
+    color: red;
+  }
+  
+  .talentservices2-image-section {
+    display: flex;
+   justify-content: space-between;
+   width: 100%;
+    padding: 20px 0;
+  }
+  
+  .talentservices2-card {
+    text-align: center;
+    width: 30%;
+    padding: 10px;
+    margin: 0 50px;
+  }
+  
+  .talentservices2-card img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .talentservices2-card-title {
+    background-color: grey;
+    color: white;
+    padding: 10px;
+    margin: 10px 0;
+  }
+  
+  .talentservices2-description {
+    /* display: none; */
+    padding: 10px;
+  }
+  
+  .talentservices2-grid-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+    text-align: center;
+    margin: 10px 50px;
+  }
+  
+  .talentservices2-grid-card {
+    width: 15%;
+  }
+  
+  .talentservices2-grid-card img {
+    width: 100%;
+    border-radius: 5px;
+  }
+  
+  .talentservices2-grid-card h4 {
+    margin-top: 10px;
+    color: #444;
+  }
+  
+  .talentservices2-banner {
+    background-image: url('../assets/talent-solutions/unity1.jpg');
+    background-size: cover;
+    text-align: left;
+    height: 80vh;
+    padding: 60px;
+    color: white;
+  }
+  
+  .talentservices2-banner h1{
+      font-size: 70px;
+      margin: 10px 40px;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  .talentservices2-banner h2{
+    font-size: 40px;
+    margin: 10px 45px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  .talentservices2-banner h3 {
+    font-size: 70px;
+    margin: 10px 45px;
+    color: red;
+  }
+  
+  .talentservices2-buttons button {
+    background-color: white;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    border: none;
+    padding: 10px 20px;
+    margin: 40px;
+    cursor: pointer;
+    font-size: 17px;
+  }
+  
+  .talentservices2-buttons button:hover {
+    background-color: red;
+    color: white;
+  }
+  
+  .talentservices2-partnership {
+    text-align: center;
+    line-height: 2.5rem;
+    padding: 40px;
+    background-color: #f9f9f9;
+  }
+  
+  .talentservices2-partnership h2 {
+    font-size: 60px;
+    margin-bottom: 30px;
+  }
+  
+  .talentservices2-partnership p {
+    margin-bottom: 20px;
+    font-size: 17px;
+    color: #555;
+  }
+  
+  .partner-link {
+    color: gold;
+    font-weight: bold;
+    font-size: 25px;
+    text-decoration: none;
+    display: flex;
+    justify-content: flex-start;
+    cursor: pointer;
+  }
+  
+  
+  
+  .talentservices2-social-icons {
+  
+    font-size: 20px;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .talentservices2-social-icons a{
+    text-decoration: none;
+    color: black;
+  }
+  
+  /* Responsive design for mobile screens */
+@media (max-width: 768px) {
+    /* General container adjustments */
+    .talentservices2-container {
+      padding: 10px;
+    }
+  
+    /* Header section */
+    .talentservices2-header {
+      padding: 20px;
+    }
+    .talentservices2-header h1, .talentservices2-header h2 {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+  
+    /* Image section */
+    .talentservices2-image-section {
+      flex-direction: column;
+      padding: 10px 0;
+      align-items: center;
+    }
+  
+    .talentservices2-card {
+      width: 90%;
+      margin: 10px 0;
+    }
+  
+    /* Grid section */
+    .talentservices2-grid-section {
+      flex-direction: column;
+      margin: 0;
+      padding: 10px 0;
+    }
+  
+    .talentservices2-grid-card {
+      width: 90%;
+      margin: 10px auto;
+    }
+  
+    /* Banner section */
+    .talentservices2-banner {
+      padding: 20px;
+      text-align: center;
+      height: auto;
+    }
+  
+    .talentservices2-banner h1 {
+      font-size: 40px;
+      margin: 10px;
+    }
+  
+    .talentservices2-banner h2 {
+      font-size: 30px;
+      margin: 10px;
+    }
+  
+    .talentservices2-banner h3 {
+      font-size: 40px;
+      margin: 10px;
+    }
+  
+    /* Buttons */
+    .talentservices2-buttons {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .talentservices2-buttons button {
+      width: 80%;
+      font-size: 16px;
+      margin: 20px 0;
+    }
+  
+    /* Partnership section */
+    .talentservices2-partnership {
+      padding: 20px;
+    }
+  
+    .talentservices2-partnership h2 {
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
+  
+    .talentservices2-partnership p {
+      font-size: 15px;
+    }
+  
+    /* Social icons */
+    .talentservices2-social-icons {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .talentservices2-social-icons a {
+      margin: 5px 0;
+    }
+  }
+  

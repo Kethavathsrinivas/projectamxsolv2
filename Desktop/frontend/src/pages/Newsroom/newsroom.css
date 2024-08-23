@@ -1,0 +1,23 @@
+.roomgrid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.roomleft{
+    width: 100%;
+}
+
+.roomright{
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+  .roomgrid {
+    display: grid;
+    grid-template-columns: 100%;
+  }
+
+  .roomimg{
+    height:80vh;
+  }
+}
