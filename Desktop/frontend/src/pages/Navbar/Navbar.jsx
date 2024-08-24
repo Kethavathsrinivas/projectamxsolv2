@@ -24,6 +24,16 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const size = useWindowSize();
 
+
+  const openSidebar = () => {
+    setIsOpen(true);
+  };
+
+  const closeSidebar = () => {
+    setIsOpen(false);
+    document.body.classList.remove('no-scroll');
+  };
+
   // console.log(size);
   // console.log(isMenuOpen);
 
@@ -908,7 +918,39 @@ const Navbar = () => {
                 </li>
 
                 <li className="">
-                  <li className="relative">
+                  {/*  */}
+                  <li className="aligning">
+                            <li className="my-[20px] flex w-full ">
+                              
+
+                              <div>
+                                <Link
+                                  to={"/contactmain"}
+                                  className="text-color text-lg"
+                                  onClick={() => handleClick(null)}
+                                >
+                                  {" "}
+                                  Contact Us{" "}
+                                </Link>
+                              </div>
+                              <div className=" h-[20px] w-[20px] my-[5px]">
+                                <Link
+                                  className="text-lg text-color"
+                                  onClick={() => handleClick( 3)}
+                                >
+                                  {issubClicked ? (
+                                    <ChevronUpIcon className=" h-5 w-5 bold" />
+                                  ) : (
+                                    <ChevronDownIcon className=" h-5 w-5" />
+                                  )}
+                                </Link>
+                              </div>
+                            </li>
+                          </li>
+
+                  {/*  */}
+                  
+                  {/* <li className="relative">
                     <Link
                       className="flex items-center not-italic  headsize text-color"
                       onClick={() => handleClick(3)}
@@ -920,7 +962,7 @@ const Navbar = () => {
                         <ChevronDownIcon className="ml-2 h-5 w-5" />
                       )}
                     </Link>
-                  </li>
+                  </li> */}
                   {isClicked === 3 && (
                     <div className=" absolute top-[60px]  bg-black  w-[165px] h-auto right-[20px]">
                       <ul className="flex flex-col m-auto">
@@ -936,6 +978,8 @@ const Navbar = () => {
                             </div>
                           </li>
                         </li>
+
+                       
                       </ul>
                     </div>
                   )}
@@ -1922,7 +1966,7 @@ const Navbar = () => {
                               </div>
 
                               <div>
-                                <Link className="text-color text-lg">
+                                <Link to="/contactmain" className="text-color text-lg" >
                                   {" "}
                                   Contact Us{" "}
                                 </Link>
@@ -1947,7 +1991,7 @@ const Navbar = () => {
                             </div>
 
                             <div>
-                              <Link className="text-color text-lg">
+                              <Link className="text-color text-lg" onClick={() => handleClick(null)}>
                                 {" "}
                                 Contact us{" "}
                               </Link>
@@ -2127,7 +2171,7 @@ const Navbar = () => {
               <div className="flex items-center ml-[20px]">
                 <button
                   className="text-white"
-                  onClick={() => setIsMenuOpen(!isMenuOpen)}
+                  onClick={() => {setIsMenuOpen(!isMenuOpen) ,()=>isMenuOpen?document.body.classList.add('no-scroll') : document.body.classList.remove('no-scroll')}}
                 >
                   {isMenuOpen ? (
                     <XIcon className="h-6 w-6" /> // Display XIcon when menu is open
@@ -2167,7 +2211,7 @@ const Navbar = () => {
           </nav>
 
           <nav
-            className={`absolute h-[80px] w-full bg-blue-100 top-0 flex justify-center align-center items-center  px-4 search_nav ${
+            className={`absolute h-[65px] w-full bg-blue-100 top-0 flex justify-center align-center items-center  px-4 search_nav ${
               isSearch ? "show" : "hide"
             }`}
           >
@@ -2197,11 +2241,11 @@ const Navbar = () => {
           {/* <div className=" "></div> */}
 
           <nav
-            className={`absolute h-full w-[60%] bg-black top-0 ${
+            className={`absolute  h-[100%] w-[60%] bg-black top-0  ${
               isMenuOpen ? "show" : "subhide"
             } p-4 overflow-hidden`}
           >
-            <div className="flex flex-col  w-full h-full overflow-y-scroll">
+            <div className="flex flex-col  w-full h-full ">
               <div className="fixed">
                 <button
                   className="text-white "
@@ -2691,7 +2735,7 @@ const Navbar = () => {
                         <ul className="">
                           <li className="pl-[20px]">
                             <li className="text-color texts pl-[20px]">
-                              <Link to={"/who-we-are/About-us"}>About us</Link>
+                              <Link to={"/who-we-are/About-us"} onClick={(prev) => setIsMenuOpen(!prev)}>About us</Link>
                             </li>
                           </li>
 
@@ -2705,7 +2749,7 @@ const Navbar = () => {
                                 )}
                               </button>
                               <Link to="/people" className="text-color">
-                                <p className="texts">People</p>
+                                <p className="texts" onClick={(prev) => setIsMenuOpen(!prev)}>People</p>
                               </Link>
                             </li>
                             {isSubmenuClick === 6 && (

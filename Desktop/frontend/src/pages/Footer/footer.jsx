@@ -388,7 +388,7 @@ const Footer = () => {
         </div> */}
 
             <div className="card_i flex">
-              <img src={amxsolImage} className="h-[100px] w-[200px]" />
+              <img src={amxsolImage} className="h-[30px] w-[100px]" />
               {/* <a
               href="https://www.linkedin.com/company/amxsol"
               className="socialContainer containerOne"
